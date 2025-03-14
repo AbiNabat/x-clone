@@ -1,8 +1,8 @@
 import React from 'react';
-import {FaSquareXTwitter} from "react-icons/fa6";
 import {FaHome} from "react-icons/fa";
 import Link from "next/link";
 import {BsTwitterX} from "react-icons/bs";
+import SignUp from "@/components/SignUp";
 
 const Sidebar = () => {
     return (
@@ -15,7 +15,7 @@ const Sidebar = () => {
                 <FaHome className='w-7 h-7' />
                 <span className='font-bold text-2xl hidden xl:inline'>Home</span>
             </Link>
-            <button className='bg-blue-400 text-white font-bold rounded-full mt-6  hover:bg-blue-600 transition-all duration-200 w-48 h-9 hover:brightness-95 shadow-md hidden xl:inline'>Sign up</button>
+            <SignUp/>
         </div>
     );
 };
