@@ -3,10 +3,12 @@ import {FaHome} from "react-icons/fa";
 import Link from "next/link";
 import {BsTwitterX} from "react-icons/bs";
 import SignUp from "@/components/SignUp";
+import Profile from "@/components/Profile";
 
 const Sidebar = () => {
     return (
-        <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col p-3 justify-between h-screen'>
+            <div className='flex flex-col gap-4 p-3'>
             <Link href='/'>
 
                 <BsTwitterX className='w-16 h-16 cursor-pointer p-3 hover:bg-gray-100 rounded-full transition-all duration-200' />
@@ -16,6 +18,9 @@ const Sidebar = () => {
                 <span className='font-bold text-2xl hidden xl:inline'>Home</span>
             </Link>
             <SignUp/>
+            </div>
+            <Profile  />
+
         </div>
     );
 };
