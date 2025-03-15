@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
               <div className='hidden sm:inline border-r'>
                   <Sidebar/>
               </div>
-              <div>
+              <div className=' flex-1'>
                   {children}
               </div>
               <div className='lg:flex-col p-3 h-screen border-l hidden lg:flex w-[24rem]'>
